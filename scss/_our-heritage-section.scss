@@ -1,0 +1,53 @@
+.our-heritage-inner {
+	@media screen and (max-width:639px){
+		display: block;
+	}
+	@media screen and (min-width:640px){
+		display: flex;
+	}
+
+	@media screen and (max-width:639px){
+		&__text-italic {
+			width: 100%;
+	
+			h2 {
+				font-size: 24px;
+				margin-bottom: 24px;
+			}
+	
+			p {
+				font-size: 18px;
+				line-height: 1.5;
+				font-style: italic;
+				letter-spacing: 0.02em ;
+				margin-bottom: 24px;
+			}
+		}
+		&__text {
+			width: 100%;
+		}
+	}
+
+	@media screen and (min-width:640px){
+		&__text-italic {
+			width: 50%;
+			padding-right: 74px;
+	
+			h2 {
+				margin-bottom: 24px;
+			}
+	
+			p {
+				font-size: 20px;
+				line-height: 1.5;
+				font-style: italic;
+				letter-spacing: 0.02em ;
+			}
+		}
+		&__text {
+			width: 50%;
+		}
+	}
+
+	
+}

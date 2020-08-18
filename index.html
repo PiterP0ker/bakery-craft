@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Start</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__bar">
+			<a href="index.html" class="header__logo">
+				<img src="img/logo-header.png" alt="Bakery Craft">
+			</a>
+
+			<button class="menu-toggle">
+				<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M18.8333 2.49999H1.16666C0.890532 2.49999 0.666656 2.27611 0.666656 1.99999V0.666656C0.666656 0.390531 0.890532 0.166656 1.16666 0.166656H18.8333C19.1094 0.166656 19.3333 0.390531 19.3333 0.666656V1.99999C19.3333 2.27611 19.1094 2.49999 18.8333 2.49999ZM18.8333 9.16666H1.16666C0.890532 9.16666 0.666656 8.94278 0.666656 8.66666V7.33332C0.666656 7.0572 0.890532 6.83332 1.16666 6.83332H18.8333C19.1094 6.83332 19.3333 7.0572 19.3333 7.33332V8.66666C19.3333 8.94278 19.1094 9.16666 18.8333 9.16666ZM18.8333 15.8333H1.16666C0.890532 15.8333 0.666656 15.6094 0.666656 15.3333V14C0.666656 13.7239 0.890532 13.5 1.16666 13.5H18.8333C19.1094 13.5 19.3333 13.7239 19.3333 14V15.3333C19.3333 15.6094 19.1094 15.8333 18.8333 15.8333Z"
+						fill="#303030" />
+				</svg>
+			
+			</button>
+
+			<nav class="main-nav">
+				<ul class="header__menu">
+					<li><a href="#about">About us</a></li>
+					<li><a href="#products" class="dropdown-toggle">Products</a>
+						<ul class="header__menu-dropdown">
+							<li><a href="#frozen">Frozen & Chiled</a></li>
+							<li><a href="#ambient">Ambient</a></li>
+							<li><a href="#specilty">Specilty range</a></li>
+						 </ul>
+					</li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#news">News</a></li>
+				</ul>
+				<a href="#" class="btn btn--contact-us">
+					Contact us
+				</a>
+			</nav>
+
+
+			<a href="#" class="search-header">
+				<img src="img/search.png" alt="search">
+			</a>
+
+		</div>
+		<!-- /.header-bar -->
+		<form action="#" method="GET" class="search-form">
+			<svg width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g filter="url(#filter0_d)">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M26.4797 24.8329L21.4312 19.7844C21.3356 19.6888 21.2108 19.6389 21.0777 19.6389H20.5288C21.8388 18.121 22.633 16.1457 22.633 13.9833C22.633 9.2051 18.7614 5.3335 13.9833 5.3335C9.2051 5.3335 5.3335 9.2051 5.3335 13.9833C5.3335 18.7614 9.2051 22.633 13.9833 22.633C16.1457 22.633 18.121 21.8388 19.6389 20.5288V21.0777C19.6389 21.2108 19.6929 21.3356 19.7844 21.4312L24.8329 26.4797C25.0284 26.6751 25.3444 26.6751 25.5399 26.4797L26.4797 25.5399C26.6751 25.3444 26.6751 25.0284 26.4797 24.8329ZM13.9833 20.6369C10.3071 20.6369 7.3296 17.6594 7.3296 13.9833C7.3296 10.3071 10.3071 7.3296 13.9833 7.3296C17.6594 7.3296 20.6369 10.3071 20.6369 13.9833C20.6369 17.6594 17.6594 20.6369 13.9833 20.6369Z" fill="#303030"/>
+				</g>
+				<defs>
+				<filter id="filter0_d" x="-4" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+				<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+				<feOffset dy="4"/>
+				<feGaussianBlur stdDeviation="2"/>
+				<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+				<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+				<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+				</filter>
+				</defs>
+				</svg>
+
+				<input type="text" class="search-form__field" placeholder="Search">
+				
+				<button class="search-form__close">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9832 16.0003L22.4715 11.5119C22.7311 11.2524 22.7311 10.8311 22.4715 10.5711L21.4286 9.52818C21.169 9.2686 20.7478 9.2686 20.4878 9.52818L15.9999 14.0169L11.5115 9.5286C11.2519 9.26902 10.8307 9.26902 10.5707 9.5286L9.52818 10.5711C9.2686 10.8307 9.2686 11.2519 9.52818 11.5119L14.0165 16.0003L9.52818 20.4886C9.2686 20.7482 9.2686 21.1694 9.52818 21.4294L10.5711 22.4724C10.8307 22.7319 11.2519 22.7319 11.5119 22.4724L15.9999 17.9836L20.4882 22.4719C20.7478 22.7315 21.169 22.7315 21.429 22.4719L22.4719 21.429C22.7315 21.1694 22.7315 20.7482 22.4719 20.4882L17.9832 16.0003Z" fill="#303030"/>
+						</svg>
+				</button>
+		</form>
+	</header>
+
+	<main>
+		<section class="section section--description" id="description">
+			<div class="container">
+				<div class="description-inner">
+					<h1 class="description-inner__title">Celebrated the world over for its café and coffee culture, Langdon
+						Coffee
+						Merchants was established in Melbourne, Australia in 2015.</h1>
+
+					<div class="description-inner__subtitle">
+						<p>
+							The (much younger) sister business to 167 - year - old Langdon Ingredients , LCM combines a rich
+							merchant history with an entrepreneurial spirit that – like its hometown – is absolutely passionate
+							about exceptional coffee.
+						</p>
+						<p>
+							We have developed strong relationships with producers and exporters across the bean belt, sourcing
+							traceable, high - quality green beans to support your transparent, sustainable “bean to brew”
+							consumer story. With fast - growing, innovative coffee cultures of their own,<br>
+							Langdon Coffee Merchants is now bringing a curated selection of our finest g reen beans to the
+							United Kingdom and New Zealand
+						</p>
+					</div>
+
+					<div class="description-inner__img">
+						<img class="description-inner__img" src="img/bake.jpg" alt="Bakers">
+					</div>
+
+					<div class="description-inner__img-mobile">
+						<img class="description-inner__img-mobile" src="img/bake-mobile.jpg" alt="Bakers">
+					</div>
+					
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<section class="section section--products">
+			<div class="container">
+				<div class="product-inner">
+					<div class="slick-slider-product">
+						<div class="product-card">
+							<img src="img/categories/egg.jpg" alt="Egg Products">
+							<h3>Egg Products</h3>
+							<p class="product-card__description">
+								Every application requires the right flour, so we've developed a range of Bakers'flours
+								providing.
+							</p>
+
+						</div>
+						<div class="product-card">
+							<img src="img/categories/fruit.jpg" alt="IQF Fruit and Vegetables">
+							<h3>IQF Fruit and Vegetables</h3>
+							<p class="product-card__description">
+								Every application requires the right flour, so we've developed a range of Bakers'flours
+								providing.
+							</p>
+
+						</div>
+						<div class="product-card">
+							<img src="img/categories/herbs.jpg" alt="IQF Herbs">
+							<h3>IQF Herbs</h3>
+							<p class="product-card__description">
+								Every application requires the right flour, so we've developed a range of Bakers'flours
+								providing.
+							</p>
+
+						</div>
+						<div class="product-card">
+							<img src="img/categories/bread.jpg" alt="Butters">
+							<h3>Butters</h3>
+							<p class="product-card__description">
+								Every application requires the right flour, so we've developed a range of Bakers'flours
+								providing.
+							</p>
+
+						</div>
+						
+
+					</div>
+					
+					<div class="navigation-wrapper">
+						<button class="slider-btn navigation-wrapper__prev" data-best-prev>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M15.2279 5.19066L15.8466 5.80935C15.9931 5.95579 15.9931 6.19322 15.8466 6.33969L10.1998 12L15.8466 17.6603C15.9931 17.8068 15.9931 18.0442 15.8466 18.1907L15.2279 18.8094C15.0815 18.9558 14.844 18.9558 14.6976 18.8094L8.15337 12.2652C8.00694 12.1188 8.00694 11.8813 8.15337 11.7348L14.6976 5.19066C14.844 5.04419 15.0815 5.04419 15.2279 5.19066Z" />
+							</svg>
+
+						</button>
+
+						<div class="navigation-wrapper__dots">
+
+						</div>
+						<button class="slider-btn navigation-wrapper__next" data-best-next>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M8.7721 5.19066L8.15338 5.80935C8.00694 5.95579 8.00694 6.19322 8.15338 6.33969L13.8002 12L8.15338 17.6603C8.00694 17.8068 8.00694 18.0442 8.15338 18.1907L8.7721 18.8094C8.91853 18.9558 9.15597 18.9558 9.30244 18.8094L15.8466 12.2652C15.9931 12.1188 15.9931 11.8813 15.8466 11.7348L9.30244 5.19066C9.15597 5.04419 8.91853 5.04419 8.7721 5.19066Z" />
+							</svg>
+
+						</button>
+
+					</div>
+
+					<a href="#" class="btn btn--our-products">
+						Our Products
+					</a>
+				</div>
+
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<section class="section section--our-team" id="our-team">
+			<div class="container">
+				<div class="our-team-inner">
+					<div class="our-team-inner__text">
+						<h2>Our team</h2>
+						<p>
+							The team behind Bakery Craft brings with them over 30 years of combined experience in the coffee
+							industry
+						</p>
+						<p>
+							The team behind Bakery Craft brings with them over 30 years of combined experience in the coffee
+							industry.
+							With backgrounds in coffee trading, specialty roasting,
+							Q - grading, café management and competitive brewing respectively, our passionate teams in London,
+							Auckland, Melbourne and Adelaide take their coffee seriously,
+							very seriously!
+						</p>
+						<p>
+							The team travel to origin on a regular basis, and have also developed exclusive partnerships with
+							producers and collective - managers who assist us at origin, working directly with growers to
+							improve their planning, production techniques and access to finance
+						</p>
+
+					</div>
+					<div class="our-team-inner__img">
+						<img src="img/croisant.jpg" alt="Croisans">
+					</div>
+					<div class="our-team-inner__img-mobile">
+						<img src="img/croisant-mobile.jpg" alt="Croisans">
+					</div>
+
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<section class="section section--our-heritage" id="our-heritage">
+			<div class="container">
+				<div class="our-heritage-inner">
+					<div class="our-heritage-inner__text-italic">
+						<h2>Our heritage</h2>
+						<p>
+							“We’ve been sourcing the world’s finest ingredients for over 165 years.”
+						</p>
+					</div>
+					<div class="our-heritage-inner__text">
+						<p>
+							Founded 5 years ago, Langdon Coffee Merchants’ heritage stretches all the way back to the Victorian
+							goldfields when Henry Joseph Langdon arrived in Melbourne in 1852 to supply prospectors with food
+							and other vital supplies, including coffee. This merchant heritage, combined with an
+							entrepreneurial spirit, led us to start Langdon Coffee Merchants in 2015. As kids will do, we’ve
+							flown the coop and moved into our own dedicated Cupping Lab and C offee HQ in South Melbourne, but
+							we still benefit from the long - term relationships with producers and exporters formed by Langdon
+							Ingredients, and access to world - class warehousing and logistics operations.
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__bar">
+			<a href="index.html" class="footer__logo">
+				<img src="img/logo-footer.png" alt="Bakery Craft">
+			</a>
+
+			<div class="footer-sponsors">
+				<a href="#">
+					<img src="img/sponsors/lang_ingredients.png" alt="Langdon Ingridients">
+				</a>
+				<a href="#">
+					<img src="img/sponsors/lcm.png" alt="LCM">
+				</a>
+				<a href="#">
+					<img src="img/sponsors/natural_foods.png" alt="Natural Foods">
+				</a>
+				<a href="#">
+					<img src="img/sponsors/henry-langdon.png" alt="Henry Langdon">
+				</a>
+			</div>
+		</div>
+		<div class="footer__contacts">
+			<nav class="footer-nav">
+				<ul class="footer__menu">
+					<li><a href="#contact-us">Contact us</a></li>
+					<li><a href="#terms-conditions">Terms & Conditions</a></li>
+					<li><a href="#privacy-policy">Privacy Policy</a></li>
+				</ul>
+			</nav>
+
+			<p class="copyright">
+				Copyright 2020 Bakery Craft
+			</p>
+		</div>
+	</footer>
+	<!-- /.footer-bar -->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
