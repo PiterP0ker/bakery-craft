@@ -41,7 +41,7 @@ img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-	
+
 }
 
 
@@ -54,6 +54,7 @@ p {
 	margin: 0;
   padding: 0;
 }
+
 
 h1,h2,h3,h4,h5,h6{
 	font-weight: 600;
@@ -134,7 +135,7 @@ h4, h5, h6{
 
 	@media screen and (max-width:639px){
 		&--description {
-			padding: 40px 0;
+			padding: 126px 0 40px;
 		}
 	
 		&--products {
@@ -151,7 +152,7 @@ h4, h5, h6{
 	}
 	@media screen and (min-width:640px){
 		&--description {
-			padding: 78px 0 80px;
+			padding: 198px 0 80px;
 		}
 	
 		&--products {
@@ -166,4 +167,8 @@ h4, h5, h6{
 			padding: 80px 0 128px;
 		}
 	}
+}
+
+.overflow {
+	overflow: hidden;
 }

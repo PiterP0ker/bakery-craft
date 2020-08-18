@@ -28,6 +28,20 @@ let menuWrap = document.querySelector('.main-nav');
 menuBtn.addEventListener('click', () => {
 	menuWrap.classList.toggle('active');
 });
+
+
+let header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+	if ($(window).scrollTop() > header.clientHeight/2){
+		header.classList.add('header-decrease-padding');
+	}
+	else {
+		header.classList.remove('header-decrease-padding');
+	
+	}
+});
+
 		
 let dropdownBtn = document.querySelector('.dropdown-toggle');
 let dropdownWrap = document.querySelector('.header__menu-dropdown');
@@ -47,3 +61,13 @@ searchBtn.addEventListener('click', () => {
 searchFormClose.addEventListener('click', () => {
 	searchForm.classList.toggle('active-search-form');
 });
+
+
+let body = document.querySelector('#body');
+
+menuBtn.addEventListener('click', () => {
+	body.classList.toggle('overflow');
+
+});
+
+

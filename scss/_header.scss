@@ -1,5 +1,10 @@
 .header {
-	position: relative;
+	position: fixed;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	background: #fff;
+	z-index: 99;
+
 	@media screen and (max-width:639px){
 		padding: 26px 20px;
 	}
@@ -7,6 +12,14 @@
 		padding: 33px 60px;
 	}
 		
+}
+
+
+.header-decrease-padding {
+	@media screen and (min-width:640px){
+		padding: 15px 60px;
+		transition: all linear .4s
+	}
 }
 
 .header__bar {
@@ -137,19 +150,20 @@
 	.main-nav {
 		position: absolute;
 		top: 0;
-		left: 0;
-		background: rgba(#fff, 1);
-		width: calc(100vw - 40px);
+		left: -20px;
+		background: #fff;
+		width: calc(100% + 40px);
 		height: 100vh;
-		padding-top: 127px;
+		padding: 127px 20px 0;
+
 		z-index: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 
 		align-items: flex-start;
-		transition: transform 0.9s;
-		transform: translateY(calc(-100% - 10px));
+		transition: transform 0.3s;
+		transform: translateX(calc(-100% - 10px));
 	}
 	.header__menu {
 		flex-direction: column;
@@ -172,7 +186,8 @@
 }
 
 .main-nav.active {
-	transform: translateY(0);
+	transform: translateX(0);
+
 }
 
 
@@ -217,13 +232,13 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	transition: transform 0.9s;
-	transform: translateY(calc(-100% - 100px));
+	transition: transform 0.3s;
+	opacity: 0;
 
 }
 
 .header__menu-dropdown.active {
-	transform: translateY(0);
+	opacity: 1;
 }
 
 @media screen and (max-width:639px){
@@ -231,9 +246,10 @@
 		position: relative;
 	}
 
+
 	.header__menu-dropdown {
 		position: absolute;
-		left: 0px;
+		left: 20px;
 		top: 250px;
 		background: rgba(#fff, 1);
 		width: 200px;
@@ -243,19 +259,21 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
-		transition: transform 0.9s;
-		transform: translateX(calc(-100% - 200px));
-	
+		transition: transform 0.3s;
+		opacity: 0;
+
 	}
 	
 	.header__menu-dropdown.active {
-		transform: translateX(0);
+		opacity: 1;
 		transition: all linear .4s;
+
 	}
 
 	.change-margin {
 		margin-bottom: 150px;
-		transition: all linear .4s;
+		transition: all linear .1s;
+		
 	}
 }
 
