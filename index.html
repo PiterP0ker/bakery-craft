@@ -9,6 +9,7 @@
 
 	<meta name="description" content="" />
 	<link rel="icon" href="favicon.png" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -31,7 +32,7 @@
 
 			<nav class="main-nav">
 				<ul class="header__menu">
-					<li><a href="#about">About us</a></li>
+					<li><a href="#about" class="about">About us</a></li>
 					<li><a href="#products" class="dropdown-toggle">Products</a>
 						<ul class="header__menu-dropdown">
 							<li><a href="#frozen">Frozen & Chiled</a></li>
@@ -55,22 +56,10 @@
 		</div>
 		<!-- /.header-bar -->
 		<form action="#" method="GET" class="search-form">
-			<svg width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<g filter="url(#filter0_d)">
-				<path fill-rule="evenodd" clip-rule="evenodd" d="M26.4797 24.8329L21.4312 19.7844C21.3356 19.6888 21.2108 19.6389 21.0777 19.6389H20.5288C21.8388 18.121 22.633 16.1457 22.633 13.9833C22.633 9.2051 18.7614 5.3335 13.9833 5.3335C9.2051 5.3335 5.3335 9.2051 5.3335 13.9833C5.3335 18.7614 9.2051 22.633 13.9833 22.633C16.1457 22.633 18.121 21.8388 19.6389 20.5288V21.0777C19.6389 21.2108 19.6929 21.3356 19.7844 21.4312L24.8329 26.4797C25.0284 26.6751 25.3444 26.6751 25.5399 26.4797L26.4797 25.5399C26.6751 25.3444 26.6751 25.0284 26.4797 24.8329ZM13.9833 20.6369C10.3071 20.6369 7.3296 17.6594 7.3296 13.9833C7.3296 10.3071 10.3071 7.3296 13.9833 7.3296C17.6594 7.3296 20.6369 10.3071 20.6369 13.9833C20.6369 17.6594 17.6594 20.6369 13.9833 20.6369Z" fill="#303030"/>
-				</g>
-				<defs>
-				<filter id="filter0_d" x="-4" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-				<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-				<feOffset dy="4"/>
-				<feGaussianBlur stdDeviation="2"/>
-				<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-				<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-				<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-				</filter>
-				</defs>
-				</svg>
+			<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M27.2246 24.8328L22.1762 19.7843C22.0805 19.6887 21.9558 19.6388 21.8227 19.6388H21.2738C22.5837 18.1209 23.378 16.1456 23.378 13.9831C23.378 9.20498 19.5064 5.33337 14.7282 5.33337C9.95003 5.33337 6.07843 9.20498 6.07843 13.9831C6.07843 18.7613 9.95003 22.6329 14.7282 22.6329C16.8906 22.6329 18.866 21.8386 20.3838 20.5287V21.0776C20.3838 21.2107 20.4379 21.3355 20.5294 21.4311L25.5778 26.4796C25.7733 26.675 26.0893 26.675 26.2848 26.4796L27.2246 25.5397C27.4201 25.3443 27.4201 25.0282 27.2246 24.8328ZM14.7282 20.6368C11.052 20.6368 8.07453 17.6593 8.07453 13.9831C8.07453 10.307 11.052 7.32947 14.7282 7.32947C18.4044 7.32947 21.3819 10.307 21.3819 13.9831C21.3819 17.6593 18.4044 20.6368 14.7282 20.6368Z" fill="#303030"/>
+			</svg>
+				
 
 				<input type="text" class="search-form__field" placeholder="Search">
 				
@@ -85,7 +74,7 @@
 	<main>
 		<section class="section section--description" id="description">
 			<div class="container">
-				<div class="description-inner">
+				<div class="description-inner" data-aos="fade-up">
 					<h1 class="description-inner__title">Celebrated the world over for its café and coffee culture, Langdon
 						Coffee
 						Merchants was established in Melbourne, Australia in 2015.</h1>
@@ -105,11 +94,11 @@
 						</p>
 					</div>
 
-					<div class="description-inner__img">
+					<div class="description-inner__img" data-aos="fade-up">
 						<img src="img/bake.jpg" alt="Bakers">
 					</div>
 
-					<div class="description-inner__img-mobile">
+					<div class="description-inner__img-mobile" data-aos="fade-up">
 						<img src="img/bake-mobile.jpg" alt="Bakers">
 					</div>
 					
@@ -120,7 +109,7 @@
 
 		<section class="section section--products">
 			<div class="container">
-				<div class="product-inner">
+				<div class="product-inner" data-aos="fade-up">
 					<div class="slick-slider-product">
 						<div class="product-card">
 							<img src="img/categories/egg.jpg" alt="Egg Products">
@@ -195,7 +184,7 @@
 
 		<section class="section section--our-team" id="our-team">
 			<div class="container">
-				<div class="our-team-inner">
+				<div class="our-team-inner" data-aos="fade-up">
 					<div class="our-team-inner__text">
 						<h2>Our team</h2>
 						<p>
@@ -217,10 +206,10 @@
 						</p>
 
 					</div>
-					<div class="our-team-inner__img">
+					<div class="our-team-inner__img" data-aos="fade-up">
 						<img src="img/croisant.jpg" alt="Croisans">
 					</div>
-					<div class="our-team-inner__img-mobile">
+					<div class="our-team-inner__img-mobile" data-aos="fade-up">
 						<img src="img/croisant-mobile.jpg" alt="Croisans">
 					</div>
 
@@ -231,7 +220,7 @@
 
 		<section class="section section--our-heritage" id="our-heritage">
 			<div class="container">
-				<div class="our-heritage-inner">
+				<div class="our-heritage-inner" data-aos="fade-up">
 					<div class="our-heritage-inner__text-italic">
 						<h2>Our heritage</h2>
 						<p>
@@ -294,6 +283,7 @@
 	<!-- /.footer-bar -->
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

@@ -381,10 +381,11 @@
 
 .header {
   position: fixed;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px -1px 0px #EAEAEA;
   width: 100%;
   background: #fff;
-  z-index: 99; }
+  z-index: 99;
+  transition: all linear .4s; }
   @media screen and (max-width: 639px) {
     .header {
       padding: 26px 20px; } }
@@ -392,10 +393,12 @@
     .header {
       padding: 33px 60px; } }
 
+.header-decrease-padding .about:after {
+  bottom: -24px; }
+
 @media screen and (min-width: 640px) {
   .header-decrease-padding {
-    padding: 15px 60px;
-    transition: all linear .4s; } }
+    padding: 15px 60px; } }
 
 .header__bar {
   display: flex;
@@ -416,7 +419,8 @@
 .header__menu {
   display: flex;
   align-items: center;
-  margin-right: 36px; }
+  margin: 0 36px 0 0;
+  position: relative; }
   .header__menu li {
     list-style: none; }
     .header__menu li a {
@@ -437,22 +441,29 @@
   .header__menu li + li {
     margin-left: 36px; }
 
-.header__menu a:after {
+@media screen and (max-width: 639px) {
+  .header__menu li a.about {
+    color: #303030; }
+    .header__menu li a.about:hover {
+      color: #B18F6A; } }
+
+@media screen and (min-width: 640px) {
+  .header__menu li a.about {
+    color: #B18F6A; } }
+
+.about:after {
   content: '';
   display: block;
   width: 100%;
-  height: 3px;
+  height: 5px;
   background-color: #B18F6A;
   position: absolute;
   left: 0px;
-  bottom: -7px;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition: opacity 0.3s, transform 0.3s; }
-
-.header__menu a:hover:after {
-  opacity: 1;
-  transform: scaleX(1); }
+  bottom: -40px;
+  transition: all linear .4s; }
+  @media screen and (max-width: 639px) {
+    .about:after {
+      display: none; } }
 
 @media screen and (max-width: 639px) {
   .header__logo {
@@ -526,7 +537,7 @@
     position: absolute;
     right: -20px;
     top: 5px;
-    background: url("/img/caret-right.png") 50% no-repeat; }
+    background: url("../img/caret-right.png") 50% no-repeat; }
 
 .header__menu-dropdown {
   display: none;
@@ -538,7 +549,7 @@
 
 .header__menu-dropdown {
   position: absolute;
-  top: 70px;
+  top: 55px;
   background: white;
   width: 200px;
   height: 150px;
@@ -558,8 +569,8 @@
     position: relative; }
   .header__menu-dropdown {
     position: absolute;
-    left: 20px;
-    top: 250px;
+    left: 0;
+    top: 125px;
     background: white;
     width: 200px;
     height: 150px;
@@ -603,7 +614,8 @@
       outline: none; }
   .search-form__close {
     background-color: transparent;
-    border: none; }
+    border: none;
+    cursor: pointer; }
     .search-form__close:focus {
       outline: none; }
 
@@ -758,28 +770,27 @@
     width: 174px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 16px;
-    transition: all linear .4s; }
+    margin-bottom: 16px; }
   .product-card h3 {
     margin-bottom: 16px; }
 
 .slick-center {
-  padding-top: 0;
-  transition: all linear .4s; }
+  padding-top: 0; }
 
 .slick-center img {
   height: 200px;
   width: 200px; }
 
 .slick-center p {
-  opacity: 1;
-  transition: all linear .4s; }
+  opacity: 1; }
 
 .slick-dotted.slick-slider {
   margin: 0; }
 
 .slick-dots {
-  position: static; }
+  position: static;
+  display: flex;
+  align-items: center; }
 
 .slick-dots li {
   margin: 0; }
@@ -806,22 +817,25 @@
   border-radius: 0;
   display: inline-flex;
   align-items: center;
-  padding-top: 10px;
+  cursor: pointer;
   justify-content: center;
-  outline: none; }
+  outline: none;
+  padding: 0; }
+  .slider-btn:hover svg, .slider-btn:focus svg {
+    fill: #B18F6A; }
   @media screen and (max-width: 786px) {
     .slider-btn {
       display: none; } }
   .slider-btn svg {
     fill: #000; }
-    .slider-btn svg:hover, .slider-btn svg:focus {
-      fill: #B18F6A; }
 
 .navigation-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px; }
+  .navigation-wrapper__dots {
+    margin: 0 64px; }
 
 .our-team-inner {
   display: flex; }
@@ -961,13 +975,13 @@ h4, h5, h6 {
 .btn {
   display: inline-block;
   color: #303030;
-  font-weight: 600; }
+  font-weight: 600;
+  transition: all linear .3s; }
   .btn--contact-us {
     padding: 12px 32px;
     border: 1px solid #303030;
     font-size: 15px;
     letter-spacing: 0.02em;
-    margin-right: 40px;
     line-height: 1.2; }
     @media screen and (max-width: 639px) {
       .btn--contact-us {
@@ -982,8 +996,7 @@ h4, h5, h6 {
     letter-spacing: 0.04em;
     line-height: 1.25; }
   .btn:hover {
-    box-shadow: 3px 3px 3px #000000;
-    transition: all linear .3s; }
+    box-shadow: 3px 3px 0px #000000; }
 
 @media screen and (max-width: 639px) {
   .section--description {

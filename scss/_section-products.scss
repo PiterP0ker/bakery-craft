@@ -28,7 +28,7 @@
 		border-radius: 50%;
 		object-fit: cover;
 		margin-bottom: 16px;
-		transition: all linear .4s;
+
 	}
 
 	h3 {
@@ -37,7 +37,7 @@
 }
 .slick-center {
 	padding-top: 0;
-	transition: all linear .4s;
+
 }
 
 .slick-center img {
@@ -47,8 +47,6 @@
 
 .slick-center p {
 	opacity: 1;
-	transition: all linear .4s;
-
 }
 
 .slick-dotted.slick-slider {
@@ -58,6 +56,9 @@
 
 .slick-dots {
 	position: static;
+	display: flex;
+	align-items: center;
+	
 }
 
 .slick-dots {
@@ -91,21 +92,27 @@
 	border-radius: 0;
 	display: inline-flex;
 	align-items: center;
-	padding-top: 10px;
+	cursor: pointer;
 	justify-content: center;
 	outline: none;
+	padding: 0;
+
+
+	&:hover, &:focus {
+		svg {
+			fill: #B18F6A;
+		}
+	}
 
 	@media screen and (max-width:786px){
 		display: none;
-		
+	
 	}
 
 	svg {
 		fill: #000;
 
-		&:hover, &:focus {
-			fill: #B18F6A;
-		}
+		
 	}
 }
 
@@ -114,4 +121,9 @@
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 50px;
+
+	&__dots {
+		margin: 0 64px;
+		
+	}
 }

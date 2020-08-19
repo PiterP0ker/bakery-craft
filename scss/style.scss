@@ -96,6 +96,7 @@ h4, h5, h6{
 	display: inline-block;
 	color: #303030;
 	font-weight: 600;
+	transition: all linear .3s;
 
 	&--contact-us {
 
@@ -103,7 +104,6 @@ h4, h5, h6{
 		border: 1px solid #303030;
 		font-size: 15px;
 		letter-spacing: 0.02em;
-		margin-right: 40px;
 		line-height: 1.2;
 
 		@media screen and (max-width:639px){
@@ -126,8 +126,8 @@ h4, h5, h6{
 	}
 
 	&:hover {
-		box-shadow: 3px 3px 3px #000000;
-		transition: all linear .3s;
+		box-shadow: 3px 3px 0px #000000;
+		
 	}
 }
 
